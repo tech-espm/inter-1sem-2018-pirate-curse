@@ -106,6 +106,8 @@ function menu() {
 	};
 
 	function clica() {
+		var hidden = document.getElementById("hidden");
+		if (hidden) document.body.removeChild(hidden);
 		game.state.start("jogo");
 		somBotao.play();
 		somBarcoRangendo.stop();
